@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 3</title>
+    <link rel="stylesheet" href="/assets/normalize.css">
+    <style>
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        #round1{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 15px solid #afcdaf;
+            position: fixed;
+        }
+        #round2{
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            border: 15px solid #c30606;
+            position: fixed;
+        }
+        .circle{
+            width: 220px;
+            height: 220px;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: absolute;
+            z-index: -1;
+            font-size: 20px;
+        }
+
+        .circle:first-child{
+            background-color: purple;
+        }
+
+        .circle:nth-child(2){
+            background-color: deepskyblue;
+        }
+
+        .circle:nth-child(3){
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div id="round1"></div>
+    <div id="round2"></div>
+    <div class="circle">Hello</div>
+</section>
+<section>
+    <div class="circle">Welcome To</div>
+</section>
+<section>
+    <div class="circle">Institute of Software Engineering</div>
+</section>
+</body>
+</html>

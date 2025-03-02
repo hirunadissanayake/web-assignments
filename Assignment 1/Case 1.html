@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 1</title>
+    <link rel="stylesheet" href="/assets/normalize.css">
+    <style>
+        body{
+            margin: auto;
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        div{
+            width: 50%;
+            height: 50%;
+            position: absolute;
+        }
+
+        div:nth-child(1){
+            background-color: red;
+            top: 0;left: 0;
+
+        }
+        div:nth-child(2){
+            background-color: #19a846;
+            top: 0;right: 0;
+        }
+        div:nth-child(3){
+            background-color: #959300;
+            bottom: 0;left: 0;
+        }
+        div:nth-child(4){
+            background-color: #a15b8d;
+            bottom: 0;right: 0;
+        }
+        div>div:nth-child(1){
+            border-radius: 100%;
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        div>div>div:nth-child(1){
+            border-radius: 0%;
+            width: 50px;
+            height: 50px;
+            background-color: #9f1010;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        div.main {
+            background-color: #ffffff;
+            width: 100px;
+            height: 100px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        div.main>div>div.circle{
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            background-color: #9f1010;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        body>div.corner{
+            width: 80px;
+            height: 80px;
+            background: #ffffff;
+            position: absolute;
+        }
+        body>div:nth-child(6){
+            top: 0;
+            left: 0;
+            border-bottom-right-radius: 100%;
+        }
+
+        body>div:nth-child(7){
+            top: 0;
+            right: 0;
+            border-bottom-left-radius: 100%
+        }
+
+        body>div:nth-child(8){
+            bottom: 0;
+            left: 0;
+            border-top-right-radius: 100%
+        }
+        body>div:nth-child(9){
+            bottom: 0;
+            right: 0;
+            border-top-left-radius: 100%;
+
+        }
+        body>div:nth-child(10) {
+            right: 0;
+            left: 0;
+            top: -35px;;
+            margin: auto;
+            border-radius: 0 0 100% 100%;
+        }
+        body>div:nth-child(11) {
+            right: 0;
+            left: 0;
+            bottom: -40px;
+            margin: auto;
+            border-radius: 100% 100% 0 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<div>
+    <div>
+        <div></div>
+    </div>
+</div>
+<div>
+    <div>
+        <div></div>
+    </div>
+</div>
+<div>
+    <div>
+        <div></div>
+    </div>
+</div>
+<div>
+    <div>
+        <div></div>
+    </div>
+</div>
+
+<div class="main">
+    <div>
+        <div class="circle"></div>
+    </div>
+</div>
+
+<diV class="corner"></diV>
+<diV class="corner"></diV>
+<diV class="corner"></diV>
+<diV class="corner"></diV>
+
+<diV class="corner"></diV>
+<diV class="corner"></diV>
+
+</body>
+</html>
