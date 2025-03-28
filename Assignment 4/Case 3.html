@@ -1,10 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/normalize.css">
+  <title>Case 3</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    section {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    section > div {
+      width: 200px;
+      height: 100px;
+      background-color: blue;
+      border-radius: 10%;
+      position: absolute;
+      animation: move-corners 4s infinite ease-in-out alternate;
+    }
+
+    @keyframes move-corners {
+      0% {
+        top: 0;
+        left: 0;
+        background-color: blue;
+      }
+      25% {
+        top: 0;
+        left: calc(100vw - 200px);
+        background-color: yellow;
+        transform: rotate(180deg);
+      }
+      50% {
+        top: calc(100vh - 100px);
+        left: calc(100vw - 200px);
+        background-color: red;
+        transform: rotate(360deg);
+      }
+      75% {
+        top: calc(100vh - 100px);
+        left: 0;
+        background-color: deeppink;
+        transform: rotate(180deg);
+      }
+      100% {
+        top: 0;
+        left: 0;
+        background-color: orangered;
+      }
+    }
+  </style>
 </head>
 <body>
+
+<section>
+  <div></div>
+</section>
 
 </body>
 </html>
