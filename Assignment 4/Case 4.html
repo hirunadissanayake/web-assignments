@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case 4</title>
+  <link rel="stylesheet" href="/assets/normalize.css">
+  <style>
+    div{
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: lightblue;
+      border: 2px solid blue;
+
+      animation-name: waterdrop;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes waterdrop {
+      from {
+        width: 1px;
+        height: 1px;
+      }
+      to{
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+
+
+      }
+    }
+  </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
